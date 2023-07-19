@@ -1,0 +1,78 @@
+.post-capsule {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+.post-capsule h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+
+.post-capsule p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+
+.post-capsule .author {
+    font-size: 14px;
+    color: #999;
+}
+.buttonAdd {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .buttonAdd:hover {
+    background-color: darkgreen;
+  }
+  .buttonLog {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .buttonLog:hover {
+    background-color: darkred;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .capsule {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container h2 {
+    text-align: center;
+  }
+  
+  .container form {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .container input,
+  .container button {
+    margin: 10px 0;
+  }
+  

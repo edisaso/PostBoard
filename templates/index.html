@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post Board</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Post Board</h1>
+    <a href="{{ url_for('add_post') }}" class="buttonAdd">Add Post</a>
+    <a href="{{ url_for('login') }}" class="buttonLog">Log Out</a>
+    <div id="post-container">
+        {% for post in posts %}
+    <div class="post-capsule">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.description }}</p>
+        <p>Author: {{ post.user.username }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
