@@ -24,11 +24,17 @@
 
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
-    <script>
+   <script>
         // The window.onload event ensures the script runs after the page has loaded.
         window.onload = function() {
-            // Use the alert function to display the pop-up message.
-            alert('Be sure to register before posting or login using account username:123 password:123'); // Change this message to whatever you want.
+            // Check if the pop-up message has been shown before.
+            if (!localStorage.getItem('popupShown')) {
+                // Use the alert function to display the pop-up message.
+                alert('Be sure to register before posting or login using account username:123 password:123'); // Change this message to whatever you want.
+
+                // Set a flag in localStorage to remember that the message has been shown.
+                localStorage.setItem('popupShown', true);
+            }
         };
     </script>
 </body>
